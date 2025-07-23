@@ -1,8 +1,10 @@
 
 import pytest
+from pyspark.sql import SparkSession
 from lib.DataReader import read_customers, read_orders
 from lib.DataManipulation import filter_closed_orders, count_orders_state, filter_orders_generic
 from lib.ConfigReader import get_app_config
+from pyspark.sql import SparkSession
 
 
 def test_customerdf_count(spark):
